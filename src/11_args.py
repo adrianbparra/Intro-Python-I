@@ -66,11 +66,14 @@ print(f3(8))     # Should print 9
 # Note: Google "python keyword arguments".
 
 # YOUR CODE HERE
-def f4(**numbers):
+def f4(dic = {},**numbers):
     
-    print(type(numbers))
-    # for key,val in numbers.items():
-    #     print(f"key: {key}, value: {val}")
+    for key,val in numbers.items():
+        print(f"key: {key}, value: {val}")
+
+
+    for key in dic:
+        print(f"key: {key}, value: {dic[key]}")
 
 # Should print
 # key: a, value: 12
