@@ -20,9 +20,9 @@ def outer():
     y = 120
 
     def inner():
-        
+        nonlocal y
+
         y = 999
-        # not sure how to update y in outer function
         
 
     inner()
